@@ -119,6 +119,7 @@ function updateReviews(reviewList) {
             fullName = fullName + ' ' + reviewList[i].customer_last_name;
         }
         liContent = liContent.replace(/\{_fullname\}/, fullName);
+        liContent = liContent.replace(/\{_customer_url\}/, reviewList[i].customer_url);
         var regex=/^([0-9]{2,4})-([0-1][0-9])-([0-3][0-9]) (?:([0-2][0-9]):([0-5][0-9]):([0-5][0-9]))?$/;
         var parts = reviewList[i].date_of_submission.replace(regex,"$1 $2 $3 $4 $5 $6").split(' ');
         var date = new Date(parts[0],parts[1]-1,parts[2],parts[3],parts[4],parts[5]);

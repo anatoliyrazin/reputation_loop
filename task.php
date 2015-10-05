@@ -93,7 +93,7 @@ include("inc/init.php");
     </span>
     <div class="content-text">
         <h3>
-            <a target="_blank" href="{_consumer_url}">{_fullname}</a>
+            <a target="_blank" href="{_customer_url}">{_fullname}</a>
         </h3>
         <span class="content-star">
             <div class="rating" style="display:none;">
